@@ -1,7 +1,7 @@
 ### TCC - CodeCraft
 <div align="center">
   <div style="display: flex; align-self: center; align-items: center; justify-content: center;">
-    <img src="pad_Items/imagens/favicon.png" style="flex: 1; max-width: 400px; height: auto;">
+    <img src="pad_Items/imagens/favicon.png" style="flex: 1; max-width: 400px; height: 200px;">
   </div>
 </div>
 
