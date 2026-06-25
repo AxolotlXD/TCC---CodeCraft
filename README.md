@@ -8,9 +8,14 @@
 # Sobre o Projeto:
 Nós pensamos em fazer um site para ensinar programação de um jeito fácil e gamificado, com aulas simples mas que valem a pena ser feitas, divididas em módulos, sendo HTML, CSS, JavaSript e Hardware, além de ensinar os outros nós queriamos nôs desafiar, com o intuito de melhorarmos nosso conhecimento e espalhá-lo.
 
+# Como Rodar:
+Para conseguir abrir o site, você precisará do XAMPP e do MySQL, abra o XAMPP e ative o Apache e o MySQL, a diante, coloque todos os arquivos na pasta htdocs no diretório "C:\xampp\htdocs", Após isso abra o arquivo BD.sql que esta na pasta "bds" no MySQL Workbench e crie o banco de dados. Para entrar no site só digitar localhost ou 127.0.0.1 no navegador e pronto.
+
 # Equipe:
 📌| Bryan Timoteo De Assis - Artista Principal
 <br>📌| Caio Eli dos Santos Rissato - Documentação
 <br>📌| Gustavo Pires Guarnieri Guimarães - Documentação e Escritor das Aulas
 <br>📌| João Gabriel Laurindo Domingos - Documentação e Banco de Dados
 <br>📌| Pedro Henrique Tiburcio - Programador Principal e Líder
+
+<br> <b>Não autorizamos hostear o site sem a devida permissão, use o site para uso próprio ou contatenos pelo email "ipia.tcc.bcgjp@gmail.com"</b>
