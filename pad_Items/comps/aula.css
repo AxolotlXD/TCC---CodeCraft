@@ -1,0 +1,128 @@
+/* Geral */
+:root{ --progresso: 0%; }
+p{margin-bottom: 0;}
+#header { padding: 0.5%; }
+.btn_x{ width: 100%; background-color: #ff4053; border: 2px var(--cor4) solid; color: #fff; border-radius: 20px;}
+.div_x{ width: 4%; }
+.certa { border-color: #03f490 !important;}
+.errada { border-color: #ff4053 !important;}
+.form-check{ padding-top: .6rem; }
+.main { max-width: 1760px; height: 87%; }
+.dp{ background-color: #38405d; border: 2px #292d41 solid; }
+.ctnc { height: 90 vh;}
+.form-check { width: 100%; height: 100%; padding-top: 0; margin: 0;}
+.form-check-label{ width: 90%; height: auto;}
+.lyt_exp, .lyt_quz, .lyt_res, .lyt_conc, .lyt_ded, .lyt_eoe, .lyt_qeat{ justify-items: center; align-items: center; height: 80vh;}
+.lyt_quz, .lyt_res, .lyt_conc, .lyt_ded, .lyt_qeat{ padding-top: 4%;}
+.lyt_exp{  display: flex; justify-content: center; flex-direction: column; }
+
+/* Explicação */
+.exp{ width: 60%; padding: 3%; font-size: x-large;}
+.ded_exp{ width: 80%; padding: 4%; font-size: large;}
+.cdg_exp{ margin-bottom: 3%;}
+.exp-esq { text-align: left; }
+#exp-grande{ font-size: large; }
+.tabela{ width: 50%; border: 2px #181923 solid; border-radius: 10px; margin-bottom: 3%;}
+.tabela th, .tabela td{ border: 2px #181923 solid; padding: 1%; text-align: center;}
+.tabela th{ background-color: #181923;}
+.tabela tr{ background-color: #292d41;}
+.tabela td{ width: 50%;}
+
+/* Quiz */
+.prg{ padding: 2.5%; font-size: larger;}
+.alts{ display: flex; justify-content: center; flex-direction: row; gap:5%; width: 70%; margin-top: 3%;}
+.col1, .col2 {width: 100%;}
+.cxa{ margin-top: 8%; width: 100%; min-height: 90px; padding: 3%; user-select: none; -webkit-user-select: none; -moz-user-select: none; 
+    -ms-user-select: none; cursor: pointer; transition: border-color .15s, background-color .15s; display: flex; align-items: center;}
+
+/* Correção */
+.resp{ width: 50%;}
+.alt_cert{ width: 40%; padding: 2%; margin: 5% 0 5%; border-color: #03f490;}
+.jus{ width: 60%; padding: 3%; margin: 5% 0px 0px 0px; font-size: large; }
+
+/* Conclusão */
+.img_perf{ margin-bottom: 2%; height: 200px; }
+.msg{ width: 30%; padding: 1%; margin: 2% 0px 5% 0px; }
+.stts{ background-color: var(--cor3); border: 2px #181923 solid; display: flex; flex-direction: row;
+    justify-content: center;  align-items: center; width: 60%; height: 6rem; gap: 2%; margin-bottom: 5%;}
+#u_nome{ color: #fffb00; font-family: Pixeloid-Bold; }
+.stts_div { height: 80%; border: 2px #181923 solid; border-radius: 10px; margin: 0 7%; }
+#acertos{ color: #00ff3c; }
+#erros{ color: #ff0019; }
+#tempo{ color: #0066ff; }
+#pontuacao{ color: #03f490; }
+
+/* Drag&Drop */
+.ded{ width: 100%; height: 45vh; display: flex; align-items: center; justify-content: center; margin-top: 2%;}
+.ded_prg{ padding: 2%; user-select: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; cursor: default;}
+#ded_h5{margin-top: 1%; color: #fffb00;}
+.dir, .esq { width: 50%; height: 100%; max-height: 45vh; margin: 10px; background-color: #181923; border-radius: 10px; display: flex; flex-direction: column; 
+    padding: 0.5% ; align-items: center; justify-content: flex-start; overflow-y:auto; overflow-x: hidden; scrollbar-width: thin;  scrollbar-color: #38405d #181923;}
+.obj_dd { width: 97%; background-color: #38405d; border: 2px solid #292d41; border-radius: 10px; margin: 4px; padding: 0.5%;
+    cursor: grab; transition: all 0.3s ease; user-select: none; text-align: center;}
+.obj_dd:hover { transform: translateY(-1px); box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+
+/* Encontre o Erro */
+.eoe_cod{ justify-items: center; align-items: center; width: 80vh; margin-top: 3%;}
+.eoe_alts{ width: 80vh; height: 40vh; margin-top: 5vh; display: flex; flex-direction: row; align-items: center; justify-content: center; }
+.eoe_alts *{ font-size: medium;}
+.eoe_alts .form-check {width: 35vh; height: 30vh; margin: 10px; padding: 5vh 0 0 0;; display: flex; flex-direction: column; align-items: center;  
+    text-align: center; border-radius: 20px}
+.eoe_alts .form-check .form-check-input { margin: 0;}
+.vscode { width:90vh; border-radius:4px; overflow:hidden; box-shadow:0 4px 10px rgba(0,0,0,0.4); background:#181923; color:#dcdcdc; margin-top: 4%;}
+
+/* Qual é o Elemento */
+.qeat_prg{ width: 50%; font-size: large;}
+.elm{ width: 55%; margin-top: 4%; padding: 1%; text-align: center; }
+.elm h2{ margin: 0;}
+.qeat_alts{ margin-top: 5%;}
+.qeat_cxa{ margin-top: 7%; width: 100%; padding: 3%; user-select: none; -webkit-user-select: none; -moz-user-select: none; 
+    -ms-user-select: none; cursor: pointer; transition: border-color .15s, background-color .15s; background-color: #181923; border-color: transparent;}
+    
+/* Responsividade */
+@media screen and (max-width: 1024px) {
+    *{ font-size:small; }
+    #header { padding: 2%; }
+    .colu1, .colu2 { display: flex; flex-direction: row; gap: 0%; width: 100%; }
+    .ctnc{ height: 80vh; margin-bottom: 18%;}
+    .dp{ border-width: 1px;}
+    .alts{ width: 100%; flex-direction: column;}
+    .exp{ width: 90%;}
+    .exp p, .prg p{  font-size: medium; }
+    #exp-grande{ font-size: x-small; }
+    #exp-grande-mobile{ font-size: small;}
+    .tabela{ width: 90%;}
+    .tabela td{ font-size: x-small;}
+    .cxa{ min-height: 66px; margin-top: 2%;}
+    .label{ font-size: smaller; }
+    .resp{ width: 80%;}
+    .alt_cert{ width: 70%; }
+    .jus{ width: 90%; font-size: medium; }
+    .img_perf{ height: 150px; }
+    .msg{ width: 70%; height: auto; margin-top: 5%;}
+    .stts{ height: 6rem; width: 100%; gap: 1%; margin-top: 10%;}
+    .stts_div { height: 80%; margin: 0 3%; }
+    .ded{ flex-direction: column; height: 35vh;}
+    .dir, .esq { width: 95%; height: 25vh; margin: 5px; }
+    .elm{ width: 80%; padding: 5%;}
+    .qeat_prg{ width: 100%;}
+    .vscode {width: 45vh;}
+    .vscode *, tittle {font-size: small;}
+    .eoe_cod {max-width: 10vh;}
+    .eoe_alts {max-width: 40vh; height: 60vh; margin-top: 1vh; flex-direction: column;}
+    .eoe_alts .form-check{width: 30vh; margin: 5px; padding: 0.5vh; }
+    .eoe_alts *{ font-size: small;}
+    .div_x{ width: 10%; }
+}
+
+/* Telinha personalizada com o tema do VS Code */
+.title-bar {background:#292d41;padding:5px 10px;display:flex;align-items:center;}
+.dot {height:12px;width:12px;border-radius:50%;display:inline-block;margin-right:5px;}
+.red {background:#ff5f56;}
+.yellow {background:#ffbd2e;}
+.green {background:#27c93f;}
+.title {margin-left:10px;color:#ccc;font-size:small;}
+.editor {padding:10px;}
+.line {display:flex;}
+.num {color:#555;width:30px;text-align:right;margin-right:10px;}
+.code {color:#9cdcfe;}

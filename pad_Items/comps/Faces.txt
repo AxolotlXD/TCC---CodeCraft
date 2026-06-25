@@ -1,0 +1,159 @@
+=====(FACE EXPLICAÇÃO)=====
+
+{
+    tipo: "explicacao",
+    conteudo: `
+        <div class="ctnc">
+            <div class="lyt_exp">
+                <div class="dp exp border-3 rounded-4">
+                    <p class="text-center text-break">
+                        
+                    </p>
+                </div>
+            </div>
+        </div>
+        `,
+    botao: "CONTINUAR",
+    progresso: 
+},
+
+=====(FACE EXPLICAÇÃO COM O CÓDIGO)=====
+
+{
+    tipo: "explicacao_codigo", 
+    arquivo: "index.html",
+    codigo: [
+        "LINHA DE CÓDIGO 1",
+        "LINHA DE CÓDIGO 2", 
+        "LINHA DE CÓDIGO 3",
+    ],
+    explicacao: "O HTML surgiu no início da internet como uma forma simples de estruturar conteúdo. Desde o HTML 1.0 nos anos 90 até o HTML4 nos anos 2000.",
+    botao: "CONTINUAR",
+    progresso: 
+}
+
+=====(FACE EXPLICAÇÃO COM TABELA)=====
+
+{
+    tipo: "explicacao_tabela",
+    tabela: `
+        <table class="tabela">
+            <thead>
+                <tr>
+                    <th colspan="2">TEXTO CABEÇALHO</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>DADO LINHA 1</td>
+                    <td>DADO LINHA 1</td>
+                </tr>
+                <tr>
+                    <td>DADO LINHA 2</td>
+                    <td>DADO LINHA 2</td>
+                </tr>
+            </tbody>
+        </table>
+    `,
+    conteudo: "TEXTO DE EXPLICAÇÃO AQUI",
+    botao: "CONTINUAR",
+    progresso: 
+}
+
+=====(FACE CORREÇÃO)=====
+
+{
+    tipo: "correcao",
+    textoCorreto: "Multímidia e acessibilidade com dispositivos móveis.",
+    explicacao: "atualizações do HTML possibilitaram integração de multimídia e acessibilidade aos dispositivos móveis.",
+    botao: "PRÓXIMA PERGUNTA",
+    progresso: 
+},
+
+=====(FACE CORREÇÃO DRAG&DROP)
+
+{
+    tipo: "correcao_dragdrop",
+    explicacao: "A ordem correta para criar uma página HTML básica é: 1. Definir o DOCTYPE, 2. Estruturar com html, head e body, 3. Adicionar título, 4. Inserir conteúdo.",
+    blocos: [
+        { id: "bloco1", conteudo: "&lt;!DOCTYPE html&gt;" },
+        { id: "bloco2", conteudo: "&lt;html&gt;&lt;head&gt;&lt;title&gt;Minha Página&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;" },
+        { id: "bloco3", conteudo: "&lt;title&gt;Minha Página&lt;/title&gt;" },
+        { id: "bloco4", conteudo: "&lt;h1&gt;Conteúdo aqui&lt;/h1&gt;" }
+    ],
+    botao: "PRÓXIMA PERGUNTA",
+    progresso: 
+},
+
+=====(FACE QUIZ)=====
+
+{
+    tipo: "quiz",
+    pergunta: "Descrição",
+    alternativas: [
+        "Opção 1",
+        "Opção 2",
+        "Opção 3",
+        "Opção 4"
+    ],
+    correta: 2,
+    explicacao: "Explicação",
+    botao: "VALIDAR",
+    progresso: 
+},
+
+=====(FACE DRAG&DROP)=====
+
+{
+    tipo: "dragdrop",
+    titulo: "Monte a estrutura HTML",
+    instrucao: "Coloque a estrutura na ordem correta (Arrastando)",
+    blocos: [
+        { id: "1", conteudo: "&lt;!DOCTYPE html&gt;" },
+        { id: "2", conteudo: "&lt;html&gt;" },
+        { id: "3", conteudo: "&lt;head&gt;" },
+        { id: "4", conteudo: "&lt;body&gt;" },
+    ],
+    ordemCorreta: ["1", "2", "3", "4"],
+    botao: "VALIDAR ORDEM",
+    progresso: 
+},
+
+=====(FACE ENCONTRE O ERRO)=====
+
+{
+    tipo: "encontre_erro",
+    codigo: [
+        "&lt;!DOCTYPE html&gt;",
+        "&lt;html&gt;",
+        "&lt;head&gt;", 
+        "&lt;title&gt;Minha Página&lt;/title&gt;",
+        "&lt;/head&gt;"
+    ],
+    alternativas: [
+        "Falta a tag &lt;body&gt;",
+        "A tag &lt;title&gt; está mal formatada",
+        "Não precisa de &lt;!DOCTYPE html&gt;",
+        "Está tudo correto"
+    ],
+    correta: 0,
+    botao: "VALIDAR",
+    progresso: 
+},
+
+=====( FACE QUAL É A TAG)=====
+
+{
+    tipo: "qual_tag",
+    tipoElemento: "tag HTML",
+    descricao: "Usada para criar um link para outra página",
+    alternativas: [
+        "&lt;a&gt;",
+        "&lt;link&gt;", 
+        "&lt;href&gt;",
+        "&lt;nav&gt;"
+        ],
+    correta: 0, // &lt;a&gt; é a correta
+    botao: "VALIDAR",
+    progresso: 
+},

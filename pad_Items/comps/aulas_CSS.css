@@ -1,0 +1,116 @@
+:root { --progresso: 0; --size: clamp(120px, 30vh, 300px); }
+.main { max-width: 1760px; height: 87%; margin-top: 2%; }
+
+.lyt_Aulas {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    gap: 2%;
+}
+
+.info_Aulas, .info_Progresso { background-color: #38405d; border: #292d41 solid; max-height: 100%; }
+
+.info_Aulas {
+    justify-items: center;
+    width: 59%;
+    padding: 0.7%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: #181923 #38405d;
+}
+
+.Aula {
+    display: flex;
+    flex-direction: row;
+    background-color: #292d41;
+    border: #181923 solid;
+    width: 100%;
+    height: 15%;
+    margin-bottom: 1%;
+}
+
+.Aula p { margin-bottom: 0%; margin-left: 2%; }
+.aula_Textos { width: 110%; }
+.titu_Aula { font-size: 1.7vh; margin-top: 1.5%; }
+.desc_Aula { font-size: 1.4vh; margin-top: 1%; }
+.btn_comecar { width: 100%; height: 100%; background-color: var(--cor4); }
+.info_Progresso { width: 39%; padding: 1%; }
+.info_desc{  width: 90%; margin-left: 5%; margin-right: 5%;}
+
+.btn_aula {
+    width: 20%;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    padding: 1%;
+}
+
+
+.aula_divisao{
+    border: 3px #181923 solid;
+    border-radius: 100px;
+    margin: 1% 0px 1% 0px;
+    width: 100%;
+}
+
+
+.box {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    margin-top: 14%;
+}
+
+.box .percent { position: relative; width: var(--size); height: var(--size); }
+.box .percent svg { width: 100%; height: 100%;}
+.box .percent svg circle:nth-child(1) { stroke: #f3f3f3; stroke-dashoffset: 0; }
+.box .percent svg circle:nth-child(2) { stroke: #03f490; stroke-dashoffset: calc(440 - (440 * var(--progresso)) / 100);}
+.box .percent .number h2 { font-size: calc(var(--size) * 0.18); }
+.box .texto { padding-top: 10px; font-weight: 700; letter-spacing: 1px;}
+
+.box .percent svg circle {
+    fill: none;
+    stroke-width: calc(var(--size) * 0.066);
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    stroke-linecap: round;
+}
+
+.box .percent .number {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Responsividade */
+@media screen and (max-width: 1024px) {
+
+    .main{ padding:1%; }
+    .lyt_Aulas { flex-direction: column; display: flex; gap: 2%;}
+    .info_Aulas { width: 100%; padding: 1%; border-radius: 5px;}
+    .Aula{ width: 100%; height: 30%; }
+    .titu_Aula { font-size: 1.2vh;}
+    .desc_Aula { font-size: xx-small}
+    .btn_comecar{ padding: 0; }
+    .info_Progresso { width: 100%; }
+    .info_desc { text-align: center; }
+    .box { margin-top: 0%; }
+
+    .aula_Textos{
+        overflow-y: auto;
+        overflow-x: hidden;
+        scrollbar-width: thin;
+        scrollbar-color: #181923 #38405d;
+    }
+}

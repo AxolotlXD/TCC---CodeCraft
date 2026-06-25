@@ -1,0 +1,70 @@
+:root{
+    --cor1: #4c546d;
+    --cor2: #38405d;
+    --cor3: #292d41;
+    --cor4: #181923;
+    --corFont: #fff;
+    --Font_Pix: Pixeloid;
+    --Font_PixBold: Pixeloid-Bold;
+}
+@font-face { font-family: Pixeloid; src: url(../Pixeloid.ttf); }
+@font-face { font-family: Pixeloid-Bold; src: url(../Pixeloid-Bold.ttf); }
+
+*{ color: #fff; margin: 0; padding: 0; box-sizing: border-box; font-family: var(--Font_Pix); }
+body{ background-color: var(--cor1); }
+html, body { background-color: var(--cor1); width: 100%; height: 100%; }
+
+#header{ position: relative; z-index: 0; width: 100%; background-color: var(--cor4); height: 4%;}
+.btns_header{ width: 5%; display: flex; justify-content: center; gap: 10px;}
+.p_header{ width: 10%;}
+.btn_header{ width: 32px; height: 32px;}
+.img_header{ width: 32px; height: 32px; padding: 10%; }
+
+.Bloqueada::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90px;
+    height: 90px;
+    background: url(../imagens/icones/Cadeado.png) no-repeat center/contain;
+    filter: brightness(95%);
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    animation: pulsar 2s infinite ease-in-out;
+}
+
+.Bloqueada {
+    position: relative;
+    pointer-events: none;
+    overflow: hidden;
+    user-select: none; 
+    -webkit-user-select: none;
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    cursor: default;
+}
+
+.Bloqueada::before { content: ""; position: absolute; inset: 0; background: rgba(0, 0, 0, 0.97); z-index: 1;}
+
+@keyframes pulsar{ 
+    0% { transform: translate(-50%, -50%) scale(1); opacity: 1; } 
+    50% { transform: translate(-50%, -50%) scale(1.1); opacity: 0.8; } 
+    100% { transform: translate(-50%, -50%) scale(1); opacity: 1; } 
+}
+
+.PREENCHER{ width: 100%; height: 100%; background-color: transparent; border: none;}
+.perfil_imagem{ border-radius: 10px; }
+.btn_padrao{ background-color: var(--cor3); border: 2px var(--cor4) solid; color: #fff; height: 115%;}
+.btn_padrao:hover{filter: brightness(90%); background-color: var(--cor3); border-color: #181923;}
+.btn_transparente{ background-color: transparent; border: none;}
+.btn_transparente:hover{filter: transparent(10%); background-color: rgba(255, 255, 255, 0.100); border: none;}
+#btn_term{ width: 100%;}
+
+/* Responsividade */
+@media screen and (max-width: 1024px) {  
+    #btn_header{ width: 7%; height: auto; }
+    .btns_header{ width: 10%; gap: 0px; }
+    .p_header{ width: 10%;}
+    .Bloqueada::after { width: 55px; height: 55px;}
+}
